@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpotMe</title>
+    <link rel="stylesheet" type="text/css" href="task.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+    <script src="task1.js"></script>
+    <script src="task.js"></script>
+    <script src="JQueryTasks.js"></script>
+
+</br>
+//Insert a textarea element into the DOM and fill it with the JSON structure from the first task.
+// Bonus points if JSON in the textarea is nicely formatted.
+<p></p>
+<button onclick="createTextArea()">Try the Text Area</button>
+<p></p>
+<script>
+function createTextArea() {
+    var x = document.createElement("TEXTAREA");
+    var t = document.createTextNode(JSON.stringify(myJSONObject));
+    x.appendChild(t);
+    document.body.appendChild(x);
+
+}
+</script>
+
+</body>
+</html>
